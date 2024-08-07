@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+
+# Parcel build cache
+.parcel-cache/
+
+# Parcel output directory
+dist/
+
+# Backend-specific
+/backend/node_modules/
