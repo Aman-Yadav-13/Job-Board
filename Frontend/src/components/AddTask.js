@@ -96,3 +96,5 @@ const AddTask = () => {
         </div>
     );
 }
+
+export default AddTask;
