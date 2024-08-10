@@ -13,7 +13,7 @@ const JobSeekerLandingPage = () => {
         const fetchJobs = async () => {
             try {
                 // Make an API request to fetch jobs for the current job seeker
-                const response = await axios.post('http://localhost:3000/api/fetch-job-jobseekers', { email });
+                const response = await axios.post('https://job-board-gxo5.onrender.com/api/fetch-job-jobseekers', { email });
                 console.log(response);
                 setjobs(response.data); // Update the state with the fetched job data
             } catch (error) {

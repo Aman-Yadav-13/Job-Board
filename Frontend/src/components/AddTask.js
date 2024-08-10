@@ -20,7 +20,7 @@ const AddTask = () => {
 
         try {
             // Make POST request to add a new job
-            const response = await axios.post('http://localhost:3000/api/add-job', {
+            const response = await axios.post('https://job-board-gxo5.onrender.com/api/add-job', {
                 email, title, skills, description
             });
 
@@ -96,5 +96,3 @@ const AddTask = () => {
         </div>
     );
 }
-
-export default AddTask;

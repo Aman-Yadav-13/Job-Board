@@ -10,7 +10,7 @@ const Login = (props) => {
     // Function to handle login
     const handleLogin = async (e) => {
         e.preventDefault(); // Prevent the default form submission behavior
-        const url = 'http://localhost:3000/api/Login/'.concat(props.role === 'Employer' ? 'Employer' : 'JobSeeker');
+        const url = 'https://job-board-gxo5.onrender.com/api/Login/'.concat(props.role === 'Employer' ? 'Employer' : 'JobSeeker');
         try {
             console.log(url, email, password);
             const response = await axios.post(url, { email, password });

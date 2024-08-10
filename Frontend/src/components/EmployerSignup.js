@@ -20,7 +20,7 @@ const EmployerSignup = () => {
     const addUser = async () => {
         try {
             // Make an API call to add the employer
-            const response = await axios.post('http://localhost:3000/api/Signup/Employer', {
+            const response = await axios.post('https://job-board-gxo5.onrender.com/api/Signup/Employer', {
                 firstname,
                 lastname,
                 email,

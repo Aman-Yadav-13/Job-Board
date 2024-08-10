@@ -15,7 +15,7 @@ const EmployerLandingPage = () => {
         // Define the async function to fetch jobs
         const fetchJobs = async () => {
             try {
-                const response = await axios.post('http://localhost:3000/api/employer/fetch-job', { email });
+                const response = await axios.post('https://job-board-gxo5.onrender.com/api/employer/fetch-job', { email });
 
                 // Check the response status and update the state accordingly
                 if (response.status === 200) {

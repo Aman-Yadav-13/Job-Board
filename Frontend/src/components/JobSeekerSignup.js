@@ -18,7 +18,7 @@ const JobSeekerSignup = () => { // Renamed component to reflect job seeker signu
     // Function to handle form submission
     const addUser = async () => {
         try {
-            const response = await axios.post('http://localhost:3000/api/Signup/JobSeeker', {
+            const response = await axios.post('https://job-board-gxo5.onrender.com/api/Signup/JobSeeker', {
                 firstname, lastname, email, password, address, city, state, zip, skills
             });
 

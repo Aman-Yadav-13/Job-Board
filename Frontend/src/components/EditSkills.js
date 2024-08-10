@@ -16,7 +16,7 @@ const EditSkills = () => {
     const handleUpgrade = async () => {
         try {
             // Send a PATCH request to update skills
-            const response = await axios.patch('http://localhost:3000/api/update-skills', { email, skills });
+            const response = await axios.patch('https://job-board-gxo5.onrender.com/api/update-skills', { email, skills });
 
             // Check if the response status is 200 (OK)
             if (response.status === 200) {
