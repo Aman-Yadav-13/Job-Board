@@ -22,7 +22,7 @@ mongoose.connect(mongoURI)
 // Middleware
 app.use(express.json()); // Parses incoming JSON requests
 app.use(cors({
-    origin: ['http://localhost:1234', 'https://job-board-nine-amber.vercel.app'],/// Allow requests from this origin
+    origin: ['http://localhost:1234', 'https://job-board-lvstks8l7-aman-yadav-13s-projects.vercel.app'],/// Allow requests from this origin
     methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type'], // Allow these headers
 }));
